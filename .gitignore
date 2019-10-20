@@ -1,0 +1,12 @@
+*.DS_Store
+
+# ignore all log file of latex:
+*.aux
+*.gz
+*.log
+*.nav
+*.out
+*.pdf
+*.snm
+*.tov
+

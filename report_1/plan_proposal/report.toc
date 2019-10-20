@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}项目简介}{ii}% 
+\contentsline {subsection}{\numberline {1.1}项目背景}{ii}% 
+\contentsline {paragraph}{背景 eg.现代对于通信已不仅仅局限于信息传递与交流，目前主流的即时通信软件如QQ、微信等均融合了语音、视频、数据等多媒体业务...}{ii}% 
+\contentsline {subsection}{\numberline {1.2}已有技术(包括现有缺点)}{ii}% 
+\contentsline {paragraph}{软交换技术、Android软件开发、linphone介绍、DeepLearning、opencv等对于图像及视频处理方式的发展。现有缺点eg较少应用于实时通信等}{ii}% 
+\contentsline {section}{\numberline {2}项目难点}{ii}% 
+\contentsline {paragraph}{环境搭建、算法研究、软件开发功能拓展等...}{ii}% 
+\contentsline {section}{\numberline {3}计划}{ii}% 
+\contentsline {subsection}{\numberline {3.1}时间（甘特图）}{ii}% 
+\contentsline {subsection}{\numberline {3.2}项目分工}{ii}% 
+\contentsline {section}{\numberline {4}项目目标}{ii}% 
+\contentsline {subsection}{\numberline {4.1}项目技术目标}{ii}% 
+\contentsline {paragraph}{主要用到了哪些知识，eg视频编码相关知识，Android软件二次开发，图像处理相关算法等}{ii}% 
+\contentsline {subsection}{\numberline {4.2}项目性能目标}{ii}% 
+\contentsline {paragraph}{描述一下希望达到的效果}{ii}% 
+\contentsline {section}{\numberline {5}参考文献}{iii}% 
