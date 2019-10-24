@@ -4,6 +4,7 @@
 % these codes for chinese characters input, if you meet problems with these codes, you can feel free to comment them, or you can try to change your build method to "xelatex"
 \documentclass[xcolor=dvipsnames]{beamer}
 \usepackage{xeCJK}
+\usepackage{subfigure}
 % \usepackage{romannum}
 % For convenience, some of the topics are listed here for users to use.
 
@@ -84,7 +85,7 @@
 %   Shanghai Jiao Tong University
 % }
 
-\author[魏思哲 曹靖宜 王家乐]
+\author[03小组]
 {魏思哲\and 曹靖宜\and 王家乐}
 
 \institute[SJTU] % (optional)
@@ -124,101 +125,154 @@
   \tableofcontents
 \end{frame}
 
-\section{First Main Section}
-
-\subsection{First Subsection}
-\begin{frame}{First Slide Title}{Optional Subtitle}
-  \begin{itemize}
-  \item {
-    My first point.
-  }
-  \item {
-    My second point.
-  }
-  \end{itemize}
+\section{项目简介}
+\begin{frame}
+  \frametitle{实现思路}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{images/intro.png}
+    \caption{实现思路解析图}
+    \label{}
+  \end{figure}
 \end{frame}
 
-\subsection{Second Subsection}
-% You can reveal the parts of a slide one at a time
-% with the \pause command:
-\begin{frame}{Second Slide Title}
-  \begin{itemize}
-  \item {
-    First item.
-    \pause % The slide will pause after showing the first item
-    There is a later instruction!
-    \pause
-    % Have you seen the difference?
-    % \pause
-  }
-  % You can also specify when the content should appear
-  % by using <n->:
-  \item<3-> Second item.
-  \item<4> Third item. This one will disappear soon.
-  % or you can use the \uncover command to reveal general
-  % content (not just \items):
-  \item<5-> {
-    Fourth item. \uncover<6->{Extra text in the fifth item.}
-  }
-  \end{itemize}
-\end{frame}
-
-\section{Second Main Section}
-
-\subsection{Second Subsection}
-\begin{frame}{Main Theorem}
-\begin{theorem}
-Theorem Statements. Example for citation \cite{Author1990}.
-\end{theorem}
-
-\begin{proof}
-Proof of the theorem goes here.
-\end{proof}
-\end{frame}
-
-% Placing a * after \section means it will not show in the
-% outline or table of contents.
-\section*{Summary}
-
-\begin{frame}{Summary}
-  \begin{itemize}
-  \item
-    The \alert{first main message} of your talk in one or two lines.
-  \item
-    The \alert{second main message} of your talk in one or two lines.
-  \item
-    Perhaps a \alert{third message}, but not more than that.
-  \end{itemize}
+\section{实施技术}
+\begin{frame}
   
-  \begin{itemize}
-  \item
-    Outlook
-    \begin{itemize}
-    \item
-      Something you haven't solved.
-    \item
-      Something else you haven't solved.
-    \end{itemize}
-  \end{itemize}
+\end{frame}
+\section{项目实施步骤}
+\begin{frame}
+  \frametitle{}
+  \begin{figure}[]
+    \centering
+    \includegraphics[scale=0.50]{images/gante.jpg}
+    \caption{甘特图}
+    \label{}
+  \end{figure}
 \end{frame}
 
-% Bibliography section. Use \bibitem to add more bibliography items.
-\section*{Bibliography}
-\begin{frame}{Bibliography}
-  \begin{thebibliography}{10}
-
-  \bibitem{Author1990}
-    A.~Author.
-    \newblock {\em Handbook of Everything}.
-    \newblock Some Press, 1990.
-
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
-
-  \end{thebibliography}
+\section{现有阶段进展}
+\begin{frame}
+  \frametitle{环境搭建}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.15]{images/environment.jpg}
+    \caption{Ubuntu16.04 以及 Android Studio 开发环境}
+    \label{}
+  \end{figure}
 \end{frame}
+
+\begin{frame}
+  \frametitle{图片背景去除}
+  \begin{figure}
+    \subfigure[小组成员原图]{
+        \includegraphics[width=0.45\textwidth]{images/1a.jpg}
+    }
+    \subfigure[小组成员原图]{
+        \includegraphics[width=0.45\textwidth]{images/1b.png}
+    }
+    \caption{选择人物图片进行预处理}
+  \end{figure}
+\end{frame}
+\begin{frame}
+  \frametitle{图片背景去除}
+  \begin{figure}
+    \subfigure{
+        \includegraphics[width=0.45\textwidth]{images/2a.jpg}
+    }
+    \subfigure{
+        \includegraphics[width=0.45\textwidth]{images/2b.jpg}
+    }
+    \subfigure[动物原图]{
+        \includegraphics[width=0.45\textwidth]{images/3a.jpg}
+    }
+    \subfigure[背景替换效果图]{
+        \includegraphics[width=0.45\textwidth]{images/3b.jpg}
+    }
+
+    \caption{选择人物图片进行预处理}
+  \end{figure}
+\end{frame}
+\section{项目分工}
+
+% \subsection{First Subsection}
+% \begin{frame}{First Slide Title}{Optional Subtitle}
+%   \begin{itemize}
+%   \item {
+%     My first point.
+%   }
+%   \item {
+%     My second point.
+%   }
+%   \end{itemize}
+% \end{frame}
+
+% \subsection{Second Subsection}
+% % You can reveal the parts of a slide one at a time
+% % with the \pause command:
+% \begin{frame}{Second Slide Title}
+%   \begin{itemize}
+%   \item {
+%     First item.
+%     \pause % The slide will pause after showing the first item
+%     There is a later instruction!
+%     \pause
+%     % Have you seen the difference?
+%     % \pause
+%   }
+%   % You can also specify when the content should appear
+%   % by using <n->:
+%   \item<3-> Second item.
+%   \item<4> Third item. This one will disappear soon.
+%   % or you can use the \uncover command to reveal general
+%   % content (not just \items):
+%   \item<5-> {
+%     Fourth item. \uncover<6->{Extra text in the fifth item.}
+%   }
+%   \end{itemize}
+% \end{frame}
+
+% \section*{Summary}
+
+% \begin{frame}{Summary}
+%   \begin{itemize}
+%   \item
+%     The \alert{first main message} of your talk in one or two lines.
+%   \item
+%     The \alert{second main message} of your talk in one or two lines.
+%   \item
+%     Perhaps a \alert{third message}, but not more than that.
+%   \end{itemize}
+  
+%   \begin{itemize}
+%   \item
+%     Outlook
+%     \begin{itemize}
+%     \item
+%       Something you haven't solved.
+%     \item
+%       Something else you haven't solved.
+%     \end{itemize}
+%   \end{itemize}
+% \end{frame}
+
+% % Bibliography section. Use \bibitem to add more bibliography items.
+% \section*{Bibliography}
+% \begin{frame}{Bibliography}
+%   \begin{thebibliography}{10}
+
+%   \bibitem{Author1990}
+%     A.~Author.
+%     \newblock {\em Handbook of Everything}.
+%     \newblock Some Press, 1990.
+
+%   \bibitem{Someone2000}
+%     S.~Someone.
+%     \newblock On this and that.
+%     \newblock {\em Journal of This and That}, 2(1):50--100,
+%     2000.
+
+%   \end{thebibliography}
+% \end{frame}
 
 \end{document}
