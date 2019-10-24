@@ -5,6 +5,16 @@
 \documentclass[xcolor=dvipsnames]{beamer}
 \usepackage{xeCJK}
 \usepackage{subfigure}
+\usepackage{booktabs}
+
+% \usepackage{enumitem,amssymb}
+% \newlist{todolist}{itemize}{2}
+% \setlist[todolist]{label=$\square$}
+\usepackage{bbding}
+\usepackage{pifont}
+\usepackage{wasysym}
+\usepackage{amssymb}
+
 % \usepackage{romannum}
 % For convenience, some of the topics are listed here for users to use.
 
@@ -15,7 +25,7 @@
 %\usetheme{Berlin}
 %\usetheme{Boadilla}
 % \usetheme{boxes}
-\usetheme{CambridgeUS}
+% \usetheme{CambridgeUS}
 %\usetheme{Copenhagen}
 %\usetheme{Darmstadt}
 % \usetheme{default}
@@ -25,9 +35,9 @@
 % \usetheme{Ilmenau}
 % \usetheme{JuanLesPins}
 %  \usetheme{Luebeck}
-%\usetheme{Madrid}
-% \usetheme{Malmoe}
-%\usetheme{Marburg}
+% \usetheme{Madrid}
+\usetheme{Malmoe}
+% \usetheme{Marburg}
 % \usetheme{Montpellier}
 % \usetheme{PaloAlto}
 % \usetheme{Pittsburgh}
@@ -73,7 +83,7 @@
 
 \title{Modular Video Project}
 
-\subtitle{Science and Technology Innovation (Chuyin Special)}
+\subtitle{Science and Technology Innovation (Chuying Special)}
 
 % You can uncommit one of this code block to change
 % from one-author's mode to muli-author's mode which is 
@@ -138,11 +148,33 @@
 
 \section{实施技术}
 \begin{frame}
-  
+  下面列出了我们需要解决的关键问题：
+  \begin{enumerate}
+    \item 图像处理算法
+    \begin{itemize}
+      \item 如何将人物与背景分割效果更好？
+      \item 如何尽可能地减少给编码带来的负担？
+    \end{itemize}
+    \item 视频通话平台
+    \begin{itemize}
+      \item 如何将对图片的处理算法优化成视频处理形式？
+      \item 如何将新增加的功能集成到视频通信平台上？
+    \end{itemize}
+  \end{enumerate}
 \end{frame}
 \section{项目实施步骤}
 \begin{frame}
-  \frametitle{}
+  \frametitle{实施步骤}
+  \begin{enumerate}
+    \item 查阅相关资料，了解相关技术背景，确定项目方向和基本方案。
+    \item 搭建FreeSWITCH+Linphone环境平台，实现基础视频通信功能。
+    \item 调研学习相关算法，确定下一步图像处理算法方案。
+    \item 完成图像处理算法的程序编写。
+    \item 将图像处理算法集成到Linphone软件中，实现功能拓展，即在实时视频通信过程中对前景图像/背景的变换处理。
+  \end{enumerate}
+\end{frame}
+\begin{frame}
+  \frametitle{项目甘特图展示}
   \begin{figure}[]
     \centering
     \includegraphics[scale=0.50]{images/gante.jpg}
@@ -152,8 +184,8 @@
 \end{frame}
 
 \section{现有阶段进展}
+\subsection{开发环境搭建}
 \begin{frame}
-  \frametitle{环境搭建}
   \begin{figure}
     \centering
     \includegraphics[scale=0.15]{images/environment.jpg}
@@ -161,39 +193,74 @@
     \label{}
   \end{figure}
 \end{frame}
-
+\subsection{图片背景去除}
 \begin{frame}
-  \frametitle{图片背景去除}
   \begin{figure}
-    \subfigure[小组成员原图]{
-        \includegraphics[width=0.45\textwidth]{images/1a.jpg}
+    \subfigure[原图]{
+        \includegraphics[width=0.42\textwidth]{images/1a.jpg}
     }
-    \subfigure[小组成员原图]{
-        \includegraphics[width=0.45\textwidth]{images/1b.png}
+    \subfigure[效果图]{
+        \includegraphics[width=0.42\textwidth]{images/1b.png}
     }
-    \caption{选择人物图片进行预处理}
+    % \caption{选择人物图片进行预处理}
   \end{figure}
 \end{frame}
 \begin{frame}
-  \frametitle{图片背景去除}
   \begin{figure}
     \subfigure{
-        \includegraphics[width=0.45\textwidth]{images/2a.jpg}
+        \includegraphics[width=0.42\textwidth]{images/2a.jpg}
     }
     \subfigure{
-        \includegraphics[width=0.45\textwidth]{images/2b.jpg}
+        \includegraphics[width=0.42\textwidth]{images/2b.jpg}
     }
-    \subfigure[动物原图]{
-        \includegraphics[width=0.45\textwidth]{images/3a.jpg}
+    \subfigure{
+        \includegraphics[width=0.42\textwidth]{images/3a.jpg}
     }
-    \subfigure[背景替换效果图]{
-        \includegraphics[width=0.45\textwidth]{images/3b.jpg}
+    \subfigure{
+        \includegraphics[width=0.42\textwidth]{images/3b.jpg}
     }
 
-    \caption{选择人物图片进行预处理}
+    % \caption{选择人物图片进行预处理}
   \end{figure}
 \end{frame}
+
+\section{第二阶段计划}
+\begin{frame}
+  \frametitle{}
+  \begin{enumerate}
+    \item 图像处理算法
+    \begin{itemize}
+      \setbeamertemplate{itemize items}{\color{red}$\checkmark$}
+      \item 如何将人物与背景分割效果更好？
+      \item 如何尽可能地减少给编码带来的负担？
+    \end{itemize}
+    \item 视频通话平台
+    \begin{itemize}
+      \setbeamertemplate{itemize items}{\color{red}$\circ$}
+      \item 如何将对图片的处理算法优化成视频处理形式？
+      \item 如何将新增加的功能集成到视频通信平台上？
+    \end{itemize}
+  \end{enumerate}
+  
+
+\end{frame}
+
 \section{项目分工}
+\begin{frame}
+  \frametitle{}
+  \begin{table}
+    \centering
+    \caption{第二阶段项目团队分工表}
+    \begin{tabular}{ll}
+    \hline
+    \multicolumn{1}{c}{\textbf{成员}} & \multicolumn{1}{c}{\textbf{分工}}                                                         \\ \hline
+    魏思哲                             & \begin{tabular}[c]{@{}l@{}}a. 图像处理算法优化；\\ b. 协调不同功能之间的联系；\\ c. 创意功能的可行性研究；\\~\\\end{tabular} \\
+    王家乐                             & \begin{tabular}[c]{@{}l@{}}a. 音频处理算法实现；\\ b. 前端开发；\\ c. 协助功能前端集成\\~\\\end{tabular}           \\
+    曹靖宜                             & \begin{tabular}[c]{@{}l@{}}a. 图像处理算法实现；\\ b. 图像处理转化成视频处理；\\ c. 新增功能前端集成；\end{tabular}   \\ \hline
+    \end{tabular}
+  \end{table}
+
+\end{frame}
 
 % \subsection{First Subsection}
 % \begin{frame}{First Slide Title}{Optional Subtitle}
